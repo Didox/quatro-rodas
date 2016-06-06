@@ -1,0 +1,68 @@
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+.icons {
+	display: block;
+}
+
+.icons-abril {
+	width: icons-sprite-width("abril");
+	height: icons-sprite-height("abril");
+}
+
+.icons-arrow-down {
+	width: icons-sprite-width("arrow-down");
+	height: icons-sprite-height("arrow-down");
+}
+
+.icons-arrow-ornament {
+	width: icons-sprite-width("arrow-ornament");
+	height: icons-sprite-height("arrow-ornament");
+}
+
+.icons-arrow-right {
+	width: icons-sprite-width("arrow-right");
+	height: icons-sprite-height("arrow-right");
+}
+
+.icons-close {
+	width: icons-sprite-width("close");
+	height: icons-sprite-height("close");
+}
+
+.icons-facebook {
+	width: icons-sprite-width("facebook");
+	height: icons-sprite-height("facebook");
+}
+
+.icons-instagram {
+	width: icons-sprite-width("instagram");
+	height: icons-sprite-height("instagram");
+}
+
+.icons-magnify-gray {
+	width: icons-sprite-width("magnify-gray");
+	height: icons-sprite-height("magnify-gray");
+}
+
+.icons-magnify-white {
+	width: icons-sprite-width("magnify-white");
+	height: icons-sprite-height("magnify-white");
+}
+
+.icons-menu {
+	width: icons-sprite-width("menu");
+	height: icons-sprite-height("menu");
+}
+
+.icon-twitter {
+	width: icons-sprite-width("twitter");
+	height: icons-sprite-height("twitter");
+}
+
+
+
+
+
+
