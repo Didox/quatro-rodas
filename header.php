@@ -55,19 +55,19 @@
 					<nav role="navigation" class="main-nav" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
 
 						<?php
-							// wp_nav_menu( array(
-						 //        'container' => false,
-						 //        'container_class' => 'menu cf',
-						 //        'menu' => __( 'The Main Menu', 'bonestheme' ),
-						 //        'menu_class' => 'nav top-nav cf',
-						 //        'theme_location' => 'main-nav',
-						 //        'before' => '',
-						 //        'after' => '',
-						 //        'link_before' => '',
-						 //        'link_after' => '',
-						 //        'depth' => 0,
-						 //        'fallback_cb' => '',
-							// ));
+						// wp_nav_menu( array(
+						// 	'container' => false,
+						// 	'container_class' => 'menu cf',
+						// 	'menu' => __( 'The Main Menu', 'bonestheme' ),
+						// 	'menu_class' => 'nav top-nav cf',
+						// 	'theme_location' => 'main-nav',
+						// 	'before' => '',
+						// 	'after' => '',
+						// 	'link_before' => '',
+						// 	'link_after' => '',
+						// 	'depth' => 0,
+						// 	'fallback_cb' => '',
+						// ));
 						?>
 						
 						<div class="icon-wrap">

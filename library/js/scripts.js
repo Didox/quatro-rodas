@@ -125,11 +125,9 @@ jQuery(document).ready(function($) {
   var activeArea = $('.sub-menu', activeItem);
   
   activeItem.hover(function() {
-
    $(this).closest('.menu-item-has-children', activeItem).addClass('active');
   }, function() {
     $(this).closest('.menu-item-has-children', activeItem).removeClass('active');
-
   });
 
 })(jQuery);
