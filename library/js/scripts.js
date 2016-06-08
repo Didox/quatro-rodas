@@ -118,3 +118,18 @@ jQuery(document).ready(function($) {
 
 
 }); /* end of as page load scripts */
+
+(function($){
+
+  var activeItem = $('.top-nav > .menu-item-has-children');
+  var activeArea = $('.sub-menu', activeItem);
+  
+  activeItem.hover(function() {
+
+   $(this).closest('.menu-item-has-children', activeItem).addClass('active');
+  }, function() {
+    $(this).closest('.menu-item-has-children', activeItem).removeClass('active');
+
+  });
+
+})(jQuery);

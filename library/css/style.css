@@ -516,16 +516,16 @@ table {
 }
 
 /* line 487, ../scss/partials/_normalize.scss */
-.clearfix, .cf, .comment-respond {
+.clearfix, .cf {
   zoom: 1;
 }
 /* line 489, ../scss/partials/_normalize.scss */
-.clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
+.clearfix:before, .clearfix:after, .cf:before, .cf:after {
   content: "";
   display: table;
 }
 /* line 490, ../scss/partials/_normalize.scss */
-.clearfix:after, .cf:after, .comment-respond:after {
+.clearfix:after, .cf:after {
   clear: both;
 }
 
@@ -1100,7 +1100,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
 /* line 27, ../scss/modules/_buttons.scss */
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   display: inline-block;
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1118,13 +1118,13 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   transition: background-color 0.14s ease-in-out;
 }
 /* line 44, ../scss/modules/_buttons.scss */
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+.blue-btn:hover, .blue-btn:focus {
   color: #fff;
   text-decoration: none;
   outline: none;
 }
 /* line 51, ../scss/modules/_buttons.scss */
-.blue-btn:active, .comment-reply-link:active, #submit:active {
+.blue-btn:active {
   top: 1px;
 }
 
@@ -1134,15 +1134,15 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 /* line 62, ../scss/modules/_buttons.scss */
-.blue-btn, .comment-reply-link, #submit {
+.blue-btn {
   background-color: #2980b9;
 }
 /* line 66, ../scss/modules/_buttons.scss */
-.blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
+.blue-btn:hover, .blue-btn:focus {
   background-color: #2574a8;
 }
 /* line 71, ../scss/modules/_buttons.scss */
-.blue-btn:active, .comment-reply-link:active, #submit:active {
+.blue-btn:active {
   background-color: #2472a4;
 }
 
@@ -1454,7 +1454,7 @@ select {
 }
 
 /* line 128, icons/*.png */
-.icons-sprite, .icons-abril, .icons-arrow-down, .top-nav li.menu-item-has-children > a:before, .icons-arrow-ornament, .icons-arrow-right, .icons-close, .icons-facebook, .icons-instagram, .icons-magnify-gray, .icons-magnify-white, .top-nav:before, .icons-menu, .icons-twitter {
+.icons-sprite, .icons-abril, .icons-arrow-down, .top-nav li.menu-item-has-children > a:before, .icons-arrow-ornament, .icons-arrow-right, .thumbs.menu-item-has-children li > a:before, .icons-close, .icons-facebook, .icons-instagram, .icons-magnify-gray, .icons-magnify-white, .top-nav:before, .icons-menu, .icons-twitter {
   background-image: url('../images/icons-s958d27dd7e.png');
   background-repeat: no-repeat;
 }
@@ -1475,7 +1475,7 @@ select {
 }
 
 /* line 84, ../../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-arrow-right {
+.icons-arrow-right, .thumbs.menu-item-has-children li > a:before {
   background-position: 0 -58px;
 }
 
@@ -1538,7 +1538,7 @@ select {
 }
 
 /* line 24, ../scss/modules/_sprites.scss */
-.icons-arrow-right {
+.icons-arrow-right, .thumbs.menu-item-has-children li > a:before {
   width: 7px;
   height: 10px;
 }
@@ -1812,11 +1812,11 @@ and more scalable.
   left: 0.75em;
 }
 
-/* line 260, ../scss/breakpoints/_base.scss */
+/* line 271, ../scss/breakpoints/_base.scss */
 .main-nav {
   position: relative;
 }
-/* line 263, ../scss/breakpoints/_base.scss */
+/* line 274, ../scss/breakpoints/_base.scss */
 .main-nav .icon-wrap {
   background: #d41f1f;
   padding: 20px;
@@ -1825,481 +1825,20 @@ and more scalable.
   right: 0;
 }
 
-/* line 273, ../scss/breakpoints/_base.scss */
+/* line 284, ../scss/breakpoints/_base.scss */
 .secondary-nav {
   display: none;
   background: #242424;
 }
-/* line 277, ../scss/breakpoints/_base.scss */
+/* line 288, ../scss/breakpoints/_base.scss */
 .secondary-nav .nav {
   font-size: 12px;
 }
 
 /*********************
-POSTS & CONTENT STYLES
-*********************/
-/* line 286, ../scss/breakpoints/_base.scss */
-#content {
-  margin-top: 1.5em;
-}
-
-/* line 290, ../scss/breakpoints/_base.scss */
-.hentry {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc;
-}
-/* line 296, ../scss/breakpoints/_base.scss */
-.hentry header {
-  border-bottom: 1px solid #f8f9fa;
-  padding: 1.5em;
-}
-/* line 301, ../scss/breakpoints/_base.scss */
-.hentry footer {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-/* line 305, ../scss/breakpoints/_base.scss */
-.hentry footer p {
-  margin: 0;
-}
-
-/* end .hentry */
-/* line 312, ../scss/breakpoints/_base.scss */
-.single-title,
-.page-title,
-.entry-title {
-  margin: 0;
-}
-
-/* want to style individual post classes? Booya! */
-/* post by id (i.e. post-3) */
-/* general post style */
-/* general article on a page style */
-/* general style on an attatchment */
-/* sticky post style */
-/* hentry class */
-/* style by category (i.e. category-videos) */
-/* style by tag (i.e. tag-news) */
-/* post meta */
-/* line 337, ../scss/breakpoints/_base.scss */
-.byline {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0;
-}
-
-/* entry content */
-/* line 346, ../scss/breakpoints/_base.scss */
-.entry-content {
-  padding: 1.5em 1.5em 0;
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */
-}
-/* line 349, ../scss/breakpoints/_base.scss */
-.entry-content p {
-  margin: 0 0 1.5em;
-}
-/* line 374, ../scss/breakpoints/_base.scss */
-.entry-content table {
-  width: 100%;
-  border: 1px solid #eaedf2;
-  margin-bottom: 1.5em;
-}
-/* line 379, ../scss/breakpoints/_base.scss */
-.entry-content table caption {
-  margin: 0 0 7px;
-  font-size: 0.75em;
-  color: #9fa6b4;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-/* line 388, ../scss/breakpoints/_base.scss */
-.entry-content tr {
-  border-bottom: 1px solid #eaedf2;
-}
-/* line 391, ../scss/breakpoints/_base.scss */
-.entry-content tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
-/* line 396, ../scss/breakpoints/_base.scss */
-.entry-content td {
-  padding: 7px;
-  border-right: 1px solid #eaedf2;
-}
-/* line 400, ../scss/breakpoints/_base.scss */
-.entry-content td:last-child {
-  border-right: 0;
-}
-/* line 405, ../scss/breakpoints/_base.scss */
-.entry-content th {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #eaedf2;
-  border-right: 1px solid #eaedf2;
-}
-/* line 410, ../scss/breakpoints/_base.scss */
-.entry-content th:last-child {
-  border-right: 0;
-}
-/* line 415, ../scss/breakpoints/_base.scss */
-.entry-content blockquote {
-  margin: 0 0 1.5em 0.75em;
-  padding: 0 0 0 0.75em;
-  border-left: 3px solid #2980b9;
-  font-style: italic;
-  color: #9fa6b4;
-}
-/* line 430, ../scss/breakpoints/_base.scss */
-.entry-content dd {
-  margin-left: 0;
-  font-size: 0.9em;
-  color: #787878;
-  margin-bottom: 1.5em;
-}
-/* line 437, ../scss/breakpoints/_base.scss */
-.entry-content img {
-  margin: 0 0 1.5em 0;
-  max-width: 100%;
-  height: auto;
-}
-/* line 453, ../scss/breakpoints/_base.scss */
-.entry-content .size-auto,
-.entry-content .size-full,
-.entry-content .size-large,
-.entry-content .size-medium,
-.entry-content .size-thumbnail {
-  max-width: 100%;
-  height: auto;
-}
-/* line 462, ../scss/breakpoints/_base.scss */
-.entry-content pre {
-  background: #242424;
-  color: #f8f9fa;
-  font-size: 0.9em;
-  padding: 1.5em;
-  margin: 0 0 1.5em;
-  border-radius: 3px;
-}
-
-/* end .entry-content */
-/* line 473, ../scss/breakpoints/_base.scss */
-.wp-caption {
-  max-width: 100%;
-  background: #eee;
-  padding: 5px;
-  /* images inside wp-caption */
-}
-/* line 479, ../scss/breakpoints/_base.scss */
-.wp-caption img {
-  max-width: 100%;
-  margin-bottom: 0;
-  width: 100%;
-}
-/* line 485, ../scss/breakpoints/_base.scss */
-.wp-caption p.wp-caption-text {
-  font-size: 0.85em;
-  margin: 4px 0 7px;
-  text-align: center;
-}
-
-/* end .wp-caption */
-/* image gallery styles */
-/* end .gallery */
-/* gallery caption styles */
-/* line 519, ../scss/breakpoints/_base.scss */
-.tags {
-  margin: 0;
-}
-
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
-/* line 527, ../scss/breakpoints/_base.scss */
-.pagination,
-.wp-prev-next {
-  margin: 1.5em 0;
-}
-
-/* line 531, ../scss/breakpoints/_base.scss */
-.pagination {
-  text-align: center;
-}
-/* line 534, ../scss/breakpoints/_base.scss */
-.pagination ul {
-  display: inline-block;
-  background-color: #fff;
-  white-space: nowrap;
-  padding: 0;
-  clear: both;
-  border-radius: 3px;
-}
-/* line 543, ../scss/breakpoints/_base.scss */
-.pagination li {
-  padding: 0;
-  margin: 0;
-  float: left;
-  display: inline;
-  overflow: hidden;
-  border-right: 1px solid #eaedf2;
-}
-/* line 552, ../scss/breakpoints/_base.scss */
-.pagination a, .pagination span {
-  margin: 0;
-  text-decoration: none;
-  padding: 0;
-  line-height: 1em;
-  font-size: 1em;
-  font-weight: normal;
-  padding: 0.75em;
-  min-width: 1em;
-  display: block;
-  color: #2980b9;
-}
-/* line 564, ../scss/breakpoints/_base.scss */
-.pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
-  background-color: #2980b9;
-  color: #fff;
-}
-/* line 570, ../scss/breakpoints/_base.scss */
-.pagination .current {
-  cursor: default;
-  color: #5c6b80;
-}
-/* line 574, ../scss/breakpoints/_base.scss */
-.pagination .current:hover, .pagination .current:focus {
-  background-color: #fff;
-  color: #5c6b80;
-}
-
-/* end .bones_page_navi */
-/* fallback previous & next links */
-/* line 587, ../scss/breakpoints/_base.scss */
-.wp-prev-next .prev-link {
-  float: left;
-}
-/* line 591, ../scss/breakpoints/_base.scss */
-.wp-prev-next .next-link {
-  float: right;
-}
-
-/* end .wp-prev-next */
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
-/* h3 comment title */
-/* line 602, ../scss/breakpoints/_base.scss */
-#comments-title {
-  padding: 0.75em;
-  margin: 0;
-  border-top: 1px solid #f8f9fa;
-  /* number of comments span */
-}
-
-/* line 622, ../scss/breakpoints/_base.scss */
-.commentlist {
-  margin: 0;
-  list-style-type: none;
-}
-
-/* line 627, ../scss/breakpoints/_base.scss */
-.comment {
-  position: relative;
-  clear: both;
-  overflow: hidden;
-  padding: 1.5em;
-  border-bottom: 1px solid #f8f9fa;
-  /* vcard */
-  /* end .commentlist .vcard */
-  /* end children */
-  /* general comment classes */
-}
-/* line 634, ../scss/breakpoints/_base.scss */
-.comment .comment-author {
-  padding: 7px;
-  border: 0;
-}
-/* line 640, ../scss/breakpoints/_base.scss */
-.comment .vcard {
-  margin-left: 50px;
-}
-/* line 643, ../scss/breakpoints/_base.scss */
-.comment .vcard cite.fn {
-  font-weight: 700;
-  font-style: normal;
-}
-/* line 651, ../scss/breakpoints/_base.scss */
-.comment .vcard time {
-  display: block;
-  font-size: 0.9em;
-  font-style: italic;
-}
-/* line 656, ../scss/breakpoints/_base.scss */
-.comment .vcard time a {
-  color: #9fa6b4;
-  text-decoration: none;
-}
-/* line 660, ../scss/breakpoints/_base.scss */
-.comment .vcard time a:hover {
-  text-decoration: underline;
-}
-/* line 670, ../scss/breakpoints/_base.scss */
-.comment .vcard .avatar {
-  position: absolute;
-  left: 16px;
-  border-radius: 50%;
-}
-/* line 678, ../scss/breakpoints/_base.scss */
-.comment:last-child {
-  margin-bottom: 0;
-}
-/* line 682, ../scss/breakpoints/_base.scss */
-.comment .children {
-  margin: 0;
-  /* variations */
-  /* change number for different depth */
-}
-/* line 700, ../scss/breakpoints/_base.scss */
-.comment[class*=depth-] {
-  margin-top: 1.1em;
-}
-/* line 704, ../scss/breakpoints/_base.scss */
-.comment.depth-1 {
-  margin-left: 0;
-  margin-top: 0;
-}
-/* line 709, ../scss/breakpoints/_base.scss */
-.comment:not(.depth-1) {
-  margin-top: 0;
-  margin-left: 7px;
-  padding: 7px;
-}
-/* line 722, ../scss/breakpoints/_base.scss */
-.comment.odd {
-  background-color: #fff;
-}
-/* line 725, ../scss/breakpoints/_base.scss */
-.comment.even {
-  background: #f8f9fa;
-}
-
-/* comment meta */
-/* comment content */
-/* line 759, ../scss/breakpoints/_base.scss */
-.comment_content p {
-  margin: 0.7335em 0 1.5em;
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-/* end .commentlist .comment_content */
-/* comment reply link */
-/* line 768, ../scss/breakpoints/_base.scss */
-.comment-reply-link {
-  font-size: 0.9em;
-  float: right;
-}
-
-/* end .commentlist .comment-reply-link */
-/* edit comment link */
-/* line 780, ../scss/breakpoints/_base.scss */
-.comment-edit-link {
-  font-style: italic;
-  margin: 0 7px;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
-/* line 793, ../scss/breakpoints/_base.scss */
-.comment-respond {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-
-/* line 799, ../scss/breakpoints/_base.scss */
-#reply-title {
-  margin: 0;
-}
-
-/* line 803, ../scss/breakpoints/_base.scss */
-.logged-in-as {
-  color: #9fa6b4;
-  font-style: italic;
-  margin: 0;
-}
-/* line 808, ../scss/breakpoints/_base.scss */
-.logged-in-as a {
-  color: #5c6b80;
-}
-
-/* line 813, ../scss/breakpoints/_base.scss */
-.comment-form-comment {
-  margin: 1.5em 0 0.75em;
-}
-
-/* line 817, ../scss/breakpoints/_base.scss */
-.form-allowed-tags {
-  padding: 1.5em;
-  background-color: #f8f9fa;
-  font-size: 0.9em;
-}
-
-/* comment submit button */
-/* line 824, ../scss/breakpoints/_base.scss */
-#submit {
-  float: right;
-  font-size: 1em;
-}
-
-/* comment form title */
-/* line 831, ../scss/breakpoints/_base.scss */
-#comment-form-title {
-  margin: 0 0 1.1em;
-}
-
-/* cancel comment reply link */
-/* logged in comments */
-/* allowed tags */
-/* line 844, ../scss/breakpoints/_base.scss */
-#allowed_tags {
-  margin: 1.5em 10px 0.7335em 0;
-}
-
-/* no comments */
-/* line 849, ../scss/breakpoints/_base.scss */
-.nocomments {
-  margin: 0 20px 1.1em;
-}
-
-/*********************
-SIDEBARS & ASIDES
-*********************/
-/* line 865, ../scss/breakpoints/_base.scss */
-.widget ul li {
-  /* deep nesting */
-}
-
-/* line 882, ../scss/breakpoints/_base.scss */
-.no-widgets {
-  background-color: #fff;
-  padding: 1.5em;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  margin-bottom: 1.5em;
-}
-
-/*********************
 FOOTER STYLES
 *********************/
-/* line 895, ../scss/breakpoints/_base.scss */
+/* line 297, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: #242424;
@@ -2375,35 +1914,6 @@ tweeners.
 
   /* end .menu */
   /*********************
-  POSTS & CONTENT STYLES
-  *********************/
-  /* entry content */
-  /* line 81, ../scss/breakpoints/_481up.scss */
-  .entry-content {
-    /* at this larger size, we can start to align images */
-  }
-  /* line 85, ../scss/breakpoints/_481up.scss */
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left;
-  }
-  /* line 90, ../scss/breakpoints/_481up.scss */
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right;
-  }
-  /* line 95, ../scss/breakpoints/_481up.scss */
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both;
-  }
-
-  /* end .entry-content */
-  /*********************
   FOOTER STYLES
   *********************/
   /*
@@ -2444,208 +1954,6 @@ you can add resource intensive styles.
   }
 
   /*********************
-  HEADER STYLES
-  *********************/
-  /* line 36, ../scss/breakpoints/_768up.scss */
-  #logo {
-    display: block;
-    float: left;
-    width: auto;
-    margin: 0.75em 0;
-  }
-
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  /* line 47, ../scss/breakpoints/_768up.scss */
-  .nav {
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */
-  }
-  /* line 49, ../scss/breakpoints/_768up.scss */
-  .nav ul {
-    background: #242424;
-    margin-top: 0;
-  }
-  /* line 53, ../scss/breakpoints/_768up.scss */
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */
-  }
-  /* line 57, ../scss/breakpoints/_768up.scss */
-  .nav li a {
-    border-bottom: 0;
-    /*
-    you can use hover styles here even though this size
-    has the possibility of being a mobile device.
-    */
-  }
-  /* line 64, ../scss/breakpoints/_768up.scss */
-  .nav li a:hover, .nav li a:focus {
-    color: #fff;
-    text-decoration: underline;
-  }
-  /* line 76, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu,
-  .nav li ul.children {
-    margin-top: 0;
-    border-top: 0;
-    position: absolute;
-    visibility: hidden;
-    z-index: 8999;
-    /* highlight sub-menu current page */
-  }
-  /* line 85, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li,
-  .nav li ul.children li {
-    position: relative;
-    /*
-    if you need to go deeper, go nuts
-    just remember deeper menus suck
-    for usability. k, bai.
-    */
-  }
-  /* line 88, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li a,
-  .nav li ul.children li a {
-    padding-left: 10px;
-    border-right: 0;
-    display: block;
-    width: 180px;
-  }
-  /* line 105, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li:last-child a,
-  .nav li ul.children li:last-child a {
-    border-bottom: 0;
-  }
-  /* line 115, ../scss/breakpoints/_768up.scss */
-  .nav li ul.sub-menu li ul,
-  .nav li ul.children li ul {
-    top: 0;
-    left: 100%;
-  }
-  /* line 130, ../scss/breakpoints/_768up.scss */
-  .nav li:hover > ul {
-    top: auto;
-    visibility: visible;
-  }
-
-  /* end .nav */
-  /* line 146, ../scss/breakpoints/_768up.scss */
-  .top-nav {
-    float: right;
-    margin-top: 0.75em;
-    background: none;
-    position: initial;
-  }
-  /* line 152, ../scss/breakpoints/_768up.scss */
-  .top-nav li {
-    border-top: none;
-    position: initial;
-  }
-  /* line 158, ../scss/breakpoints/_768up.scss */
-  .top-nav li.menu-item-has-children > a {
-    padding-bottom: 30px;
-  }
-  /* line 161, ../scss/breakpoints/_768up.scss */
-  .top-nav li.menu-item-has-children > a:hover {
-    background: #242424;
-  }
-  /* line 167, ../scss/breakpoints/_768up.scss */
-  .top-nav li .sub-menu {
-    width: 100%;
-    background: #242424;
-    left: 0;
-    height: auto !important;
-    overflow: visible !important;
-  }
-  /* line 174, ../scss/breakpoints/_768up.scss */
-  .top-nav li .sub-menu li {
-    border-top: none;
-  }
-  /* line 180, ../scss/breakpoints/_768up.scss */
-  .top-nav:before {
-    display: none;
-  }
-
-  /* line 188, ../scss/breakpoints/_768up.scss */
-  .thumbs.menu-item-has-children li {
-    float: none;
-    clear: both;
-    background: #474747;
-  }
-  /* line 194, ../scss/breakpoints/_768up.scss */
-  .thumbs.menu-item-has-children .menu-item-has-children {
-    float: left;
-  }
-  /* line 198, ../scss/breakpoints/_768up.scss */
-  .thumbs.menu-item-has-children .menu-item-has-children .sub-menu li {
-    background: #242424;
-    float: left;
-  }
-
-  /* line 206, ../scss/breakpoints/_768up.scss */
-  .main-nav {
-    position: initial;
-  }
-  /* line 209, ../scss/breakpoints/_768up.scss */
-  .main-nav .icon-wrap {
-    display: none;
-  }
-
-  /* line 214, ../scss/breakpoints/_768up.scss */
-  .secondary-nav {
-    display: block;
-  }
-
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  /* line 222, ../scss/breakpoints/_768up.scss */
-  .sidebar {
-    margin-top: 2.2em;
-  }
-
-  /* line 226, ../scss/breakpoints/_768up.scss */
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em;
-  }
-
-  /* line 231, ../scss/breakpoints/_768up.scss */
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0;
-  }
-  /* line 236, ../scss/breakpoints/_768up.scss */
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */
-  }
-  /* line 244, ../scss/breakpoints/_768up.scss */
-  .widget ul li ul {
-    margin-top: 0.75em;
-    padding-left: 1em;
-  }
-
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
-  /*********************
   FOOTER STYLES
   *********************/
   /*
@@ -2653,7 +1961,7 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 352, ../scss/breakpoints/_768up.scss */
+  /* line 41, ../scss/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -2670,7 +1978,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 *********************/
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 1320px) {
   /******************************************************************
   Site Name:
   Author:
@@ -2681,9 +1989,208 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  /* line 12, ../scss/breakpoints/_1030up.scss */
+  /* line 12, ../scss/breakpoints/_1320up.scss */
   .wrap {
-    width: 1040px;
+    width: 1320px;
+  }
+
+  /*********************
+  HEADER STYLES
+  *********************/
+  /* line 22, ../scss/breakpoints/_1320up.scss */
+  #logo {
+    display: block;
+    float: left;
+    width: auto;
+    margin: 0.75em 0;
+  }
+
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  /* line 34, ../scss/breakpoints/_1320up.scss */
+  .nav {
+    border: 0;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */
+  }
+  /* line 36, ../scss/breakpoints/_1320up.scss */
+  .nav ul {
+    background: #242424;
+    margin-top: 0;
+  }
+  /* line 40, ../scss/breakpoints/_1320up.scss */
+  .nav li {
+    float: left;
+    position: relative;
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */
+  }
+  /* line 44, ../scss/breakpoints/_1320up.scss */
+  .nav li a {
+    border-bottom: 0;
+    /*
+    you can use hover styles here even though this size
+    has the possibility of being a mobile device.
+    */
+  }
+  /* line 51, ../scss/breakpoints/_1320up.scss */
+  .nav li a:hover, .nav li a:focus {
+    color: #fff;
+    text-decoration: underline;
+  }
+  /* line 63, ../scss/breakpoints/_1320up.scss */
+  .nav li ul.sub-menu,
+  .nav li ul.children {
+    margin-top: 0;
+    border-top: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 8999;
+    /* highlight sub-menu current page */
+  }
+  /* line 72, ../scss/breakpoints/_1320up.scss */
+  .nav li ul.sub-menu li,
+  .nav li ul.children li {
+    position: relative;
+    /*
+    if you need to go deeper, go nuts
+    just remember deeper menus suck
+    for usability. k, bai.
+    */
+  }
+  /* line 75, ../scss/breakpoints/_1320up.scss */
+  .nav li ul.sub-menu li a,
+  .nav li ul.children li a {
+    padding-left: 10px;
+    border-right: 0;
+    display: block;
+    width: 180px;
+  }
+  /* line 92, ../scss/breakpoints/_1320up.scss */
+  .nav li ul.sub-menu li:last-child a,
+  .nav li ul.children li:last-child a {
+    border-bottom: 0;
+  }
+  /* line 102, ../scss/breakpoints/_1320up.scss */
+  .nav li ul.sub-menu li ul,
+  .nav li ul.children li ul {
+    top: 0;
+    left: 100%;
+  }
+  /* line 117, ../scss/breakpoints/_1320up.scss */
+  .nav li:hover > ul {
+    top: auto;
+    visibility: visible;
+  }
+
+  /* end .nav */
+  /* line 133, ../scss/breakpoints/_1320up.scss */
+  .top-nav {
+    float: right;
+    margin-top: 0.75em;
+    background: none;
+    position: initial;
+  }
+  /* line 139, ../scss/breakpoints/_1320up.scss */
+  .top-nav li {
+    border-top: none;
+    position: initial;
+  }
+  /* line 145, ../scss/breakpoints/_1320up.scss */
+  .top-nav li.menu-item-has-children > a {
+    padding-bottom: 30px;
+  }
+  /* line 148, ../scss/breakpoints/_1320up.scss */
+  .top-nav li.menu-item-has-children > a:hover {
+    background: #242424;
+  }
+  /* line 155, ../scss/breakpoints/_1320up.scss */
+  .top-nav li.menu-item-has-children.active a {
+    background: #242424;
+  }
+  /* line 160, ../scss/breakpoints/_1320up.scss */
+  .top-nav li .sub-menu {
+    width: 100%;
+    background: #242424;
+    left: 0;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  /* line 167, ../scss/breakpoints/_1320up.scss */
+  .top-nav li .sub-menu li {
+    border-top: none;
+  }
+  /* line 173, ../scss/breakpoints/_1320up.scss */
+  .top-nav:before {
+    display: none;
+  }
+  /* line 179, ../scss/breakpoints/_1320up.scss */
+  .top-nav .thumbs .desc {
+    display: block;
+    color: #ed1c24;
+    margin-top: 10px;
+  }
+  /* line 188, ../scss/breakpoints/_1320up.scss */
+  .top-nav .no-thumbs .sub-menu {
+    padding-left: 280px;
+  }
+
+  /* line 197, ../scss/breakpoints/_1320up.scss */
+  .thumbs.menu-item-has-children li {
+    float: none;
+    clear: both;
+    width: 180px;
+    text-transform: none;
+  }
+  /* line 204, ../scss/breakpoints/_1320up.scss */
+  .thumbs.menu-item-has-children li a {
+    padding-bottom: 0.75em;
+  }
+  /* line 209, ../scss/breakpoints/_1320up.scss */
+  .thumbs.menu-item-has-children .menu-item-has-children {
+    float: left;
+    position: initial;
+  }
+  /* line 213, ../scss/breakpoints/_1320up.scss */
+  .thumbs.menu-item-has-children .menu-item-has-children .sub-menu {
+    position: absolute;
+    left: 203px;
+    width: 1162px;
+    font-size: 15px;
+  }
+  /* line 219, ../scss/breakpoints/_1320up.scss */
+  .thumbs.menu-item-has-children .menu-item-has-children .sub-menu li {
+    display: inline-block;
+    width: 19.8%;
+    vertical-align: top;
+  }
+  /* line 224, ../scss/breakpoints/_1320up.scss */
+  .thumbs.menu-item-has-children .menu-item-has-children .sub-menu li a {
+    width: 100%;
+    min-height: 150px;
+  }
+
+  /* line 237, ../scss/breakpoints/_1320up.scss */
+  .active .sub-menu .sub-menu {
+    visibility: visible;
+  }
+
+  /* line 243, ../scss/breakpoints/_1320up.scss */
+  .main-nav {
+    position: initial;
+  }
+  /* line 246, ../scss/breakpoints/_1320up.scss */
+  .main-nav .icon-wrap {
+    display: none;
+  }
+
+  /* line 251, ../scss/breakpoints/_1320up.scss */
+  .secondary-nav {
+    display: block;
   }
 }
 /*********************
